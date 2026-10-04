@@ -500,7 +500,7 @@
       return `
       <div class="list-item">
         <div class="list-item-top">
-          <div onclick='openMemberModal(${JSON.stringify(m).replace(/'/g, "&#39;")})' style="cursor:pointer; flex:1; display:flex; gap:10px; align-items:center;">
+          <div onclick='openMemberModal(${JSON.stringify(m).replace(/'/g, "&#39;")})' style="cursor:pointer; flex:1; display:flex; gap:10px; align-items:left;">
             ${m.PHOTO_URL ? `<img src="${m.PHOTO_URL}" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">` : `<div style="width:40px;height:40px;border-radius:50%;background:var(--light);flex-shrink:0;"></div>`}
             <div>
               <div class="name">${m.NAMA_LENGKAP} <span class="level-badge level-${m.LEVEL || 'Bronze'}">${m.LEVEL || 'Bronze'}</span></div>
